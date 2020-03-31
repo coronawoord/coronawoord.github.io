@@ -1,1 +1,0 @@
-# coronawoord.github.io
