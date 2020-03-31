@@ -38,21 +38,26 @@
     }
 
     li {
-        width: 50%;
+        width: 22%;
+        box-shadow:0px 0px 0px 5px lightgrey inset;
+        padding: 1em;
+        margin: 0.2em;
     }
-    /* On screens that are 992px or less, set the background color to blue */
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1407px) {
         li {
-            width: 100% ;
+            width: 32% ;
         }
     }
-
-    /* On screens that are 600px or less, set the background color to olive */
-    /* @media screen and (max-width: 600px) {
+    @media screen and (max-width: 992px) {
+        li {
+            width: 48% ;
+        }
+    }
+    @media screen and (max-width: 600px) {
         li {
             width: 100%;
         }
-    } */
+    }
     </style>
 </head>
 <body>
@@ -65,8 +70,8 @@
     </div>
 </nav>
     <div class="columns">
-        <div class="column"></div>
-        <div class="column is-7">
+        <!-- <div class="column"></div> -->
+        <div class="column">
             <ol class="words">
 <li>Coronavrees</li>
 <li>Coronavirus</li>
@@ -168,7 +173,7 @@
 <li>Coronaverschijnselen</li>
             </ol>
         </div>
-        <div class="column"></div>
+        <!-- <div class="column"></div> -->
     </div>
 </div>
 </section>
