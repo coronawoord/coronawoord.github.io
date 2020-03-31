@@ -27,21 +27,32 @@
         padding-left: 1em;
         padding-right: 1em;
         margin-bottom: 2em;
+        list-style-type:none;
+        counter-reset:item 99; /* <---------------- STARTING NUMBER OF LIST (+1!) ----------------------- */
     }
 
-    ol li {
+    ol > li {
         font-family: 'Zilla Slab', serif;
         font-weight: 500;
-        font-size: 1.1em;
+        font-size: 1.2em;
+        font-weight: 500;
         font-style: italic;
         list-style-position: inside;
+        counter-increment:item -1;
     }
-
+    ol > li:before
+    {
+        content:counter(item) ". ";
+    }
     li {
-        width: 22%;
+        width: 24%;
         box-shadow:0px 0px 0px 5px lightgrey inset;
         padding: 1em;
         margin: 0.2em;
+    }
+    .top-notification {
+      width: 95%;
+      margin: auto;
     }
     @media screen and (max-width: 1407px) {
         li {
@@ -69,108 +80,115 @@
         </a>
     </div>
 </nav>
+
+
     <div class="columns">
         <!-- <div class="column"></div> -->
         <div class="column">
+          <article class="message top-notification is-dark">
+            <div class="message-body">
+              In de nieuwslawine die het Coronavirus met zich meebrengt worden er een hoop corona-samenstellingen gemaakt. Dit lijstje poogt ze te verzamelen. De lijst is op volgorde van ontdekken in het nieuws of op social media, nieuwste eerst.
+            </div>
+          </article>
             <ol class="words">
-<li>Coronavrees</li>
-<li>Coronavirus</li>
-<li>Coronacrisis</li>
-<li>Coronarecessie</li>
-<li>Coronamaatregelen</li>
-<li>Coronagevolgen</li>
-<li>Corona-interview</li>
-<li>Coronadebat</li>
-<li>Coronaleed</li>
-<li>Coronaviering</li>
-<li>Coronapatient</li>
-<li>Coronageruchten</li>
-<li>Corona-update</li>
-<li>Coronastream</li>
-<li>Coronaproblematiek</li>
-<li>Coronavraag</li>
-<li>Coronagevallen</li>
-<li>Corona-noodfonds</li>
-<li>Coronabesmetting</li>
-<li>Coronagedupeerde</li>
-<li>Corona-expert</li>
-<li>Coronadoden</li>
-<li>Corona-uitbraak</li>
-<li>Coronanervositeit</li>
-<li>Coronadagboek</li>
-<li>Coronapaniek</li>
-<li>Coronahamsteren</li>
-<li>Coronahysterie</li>
-<li>Coronaphishing</li>
-<li>Coronasymptomen</li>
-<li>Coronatelefoonlijn</li>
-<li>Coronaspuger</li>
-<li>Coronahoester</li>
-<li>Coronakucher</li>
-<li>Coronaminister</li>
-<li>Coronaproof</li>
-<li>Coronaroman</li>
-<li>Coronastand</li>
-<li>Coronaprotocol</li>
-<li>Coronastilte</li>
-<li>Coronaparadox</li>
-<li>Coronabus</li>
-<li>Coronakans</li>
-<li>Coronabeleid</li>
-<li>Coronastress</li>
-<li>Coronaregel</li>
-<li>Coronabedden</li>
-<li>Coronahype</li>
-<li>Coronaracisme</li>
-<li>Coronatijd</li>
-<li>Coronacoach</li>
-<li>Coronadiploma</li>
-<li>Coronavluchteling</li>
-<li>Coronasteun</li>
-<li>Corona-gezant</li>
-<li>Coronatest</li>
-<li>Coronaberaad</li>
-<li>Corona-angst</li>
-<li>Coronahacker</li>
-<li>Corona-app</li>
-<li>Corona-initiatief</li>
-<li>Coronazorg</li>
-<li>Coronaloket</li>
-<li>Coronadate</li>
-<li>Coronapiek</li>
-<li>Coronatest-recept</li>
-<li>Coronacijfers</li>
-<li>Corona-responscoördinator</li>
-<li>Coronagolf</li>
-<li>Corona-informatie</li>
-<li>Coronafeestje</li>
-<li>Coronabegrafenis</li>
-<li>Coronaritje</li>
-<li>Coronasprookje</li>
-<li>Coronalied</li>
-<li>Coronaweek</li>
-<li>Corona-collaborateur</li>
-<li>Coronavrij</li>
-<li>Coronapandemie</li>
-<li>Coronagedicht</li>
-<li>Coronareflectie</li>
-<li>Coronapaus</li>
-<li>Coronabrandhaard</li>
-<li>Coronababyboom</li>
-<li>Coronadoorbraak</li>
-<li>Coronaschaduw</li>
-<li>Coronaverdenking</li>
-<li>Corona-spoedpost</li>
-<li>Coronakamp</li>
-<li>Corona-aanpak</li>
-<li>Coronadienst</li>
-<li>Coronamaaien</li>
-<li>Coronabrief</li>
-<li>Coronacentrum</li>
-<li>Coronaregime</li>
-<li>Coronaslachtoffer</li>
-<li>Coronahotspot</li>
-<li>Coronaverschijnselen</li>
+              <li>Coronaverschijnselen</li>
+              <li>Coronahotspot</li>
+              <li>Coronaslachtoffer</li>
+              <li>Coronaregime</li>
+              <li>Coronacentrum</li>
+              <li>Coronabrief</li>
+              <li>Coronamaaien</li>
+              <li>Coronadienst</li>
+              <li>Corona-aanpak</li>
+              <li>Coronakamp</li>
+              <li>Corona-spoedpost</li>
+              <li>Coronaverdenking</li>
+              <li>Coronaschaduw</li>
+              <li>Coronadoorbraak</li>
+              <li>Coronababyboom</li>
+              <li>Coronabrandhaard</li>
+              <li>Coronapaus</li>
+              <li>Coronareflectie</li>
+              <li>Coronagedicht</li>
+              <li>Coronapandemie</li>
+              <li>Coronavrij</li>
+              <li>Corona-collaborateur</li>
+              <li>Coronaweek</li>
+              <li>Coronalied</li>
+              <li>Coronasprookje</li>
+              <li>Coronaritje</li>
+              <li>Coronabegrafenis</li>
+              <li>Coronafeestje</li>
+              <li>Corona-informatie</li>
+              <li>Coronagolf</li>
+              <li>Corona-responscoördinator</li>
+              <li>Coronacijfers</li>
+              <li>Coronatest-recept</li>
+              <li>Coronapiek</li>
+              <li>Coronadate</li>
+              <li>Coronaloket</li>
+              <li>Coronazorg</li>
+              <li>Corona-initiatief</li>
+              <li>Corona-app</li>
+              <li>Coronahacker</li>
+              <li>Corona-angst</li>
+              <li>Coronaberaad</li>
+              <li>Coronatest</li>
+              <li>Corona-gezant</li>
+              <li>Coronasteun</li>
+              <li>Coronavluchteling</li>
+              <li>Coronadiploma</li>
+              <li>Coronacoach</li>
+              <li>Coronatijd</li>
+              <li>Coronaracisme</li>
+              <li>Coronahype</li>
+              <li>Coronabedden</li>
+              <li>Coronaregel</li>
+              <li>Coronastress</li>
+              <li>Coronabeleid</li>
+              <li>Coronakans</li>
+              <li>Coronabus</li>
+              <li>Coronaparadox</li>
+              <li>Coronastilte</li>
+              <li>Coronaprotocol</li>
+              <li>Coronastand</li>
+              <li>Coronaroman</li>
+              <li>Coronaproof</li>
+              <li>Coronaminister</li>
+              <li>Coronakucher</li>
+              <li>Coronahoester</li>
+              <li>Coronaspuger</li>
+              <li>Coronatelefoonlijn</li>
+              <li>Coronasymptomen</li>
+              <li>Coronaphishing</li>
+              <li>Coronahysterie</li>
+              <li>Coronahamsteren</li>
+              <li>Coronapaniek</li>
+              <li>Coronadagboek</li>
+              <li>Coronanervositeit</li>
+              <li>Corona-uitbraak</li>
+              <li>Coronadoden</li>
+              <li>Corona-expert</li>
+              <li>Coronagedupeerde</li>
+              <li>Coronabesmetting</li>
+              <li>Corona-noodfonds</li>
+              <li>Coronagevallen</li>
+              <li>Coronavraag</li>
+              <li>Coronaproblematiek</li>
+              <li>Coronastream</li>
+              <li>Corona-update</li>
+              <li>Coronageruchten</li>
+              <li>Coronapatient</li>
+              <li>Coronaviering</li>
+              <li>Coronaleed</li>
+              <li>Coronadebat</li>
+              <li>Corona-interview</li>
+              <li>Coronagevolgen</li>
+              <li>Coronamaatregelen</li>
+              <li>Coronarecessie</li>
+              <li>Coronacrisis</li>
+              <li>Coronavirus</li>
+              <li>Coronavrees</li>
             </ol>
         </div>
         <!-- <div class="column"></div> -->
@@ -180,8 +198,7 @@
 <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        <strong>Coronawoord.nl</strong> is een verzameling van woorden die beginnen met &lsquo;corona&rsquo; uit het nieuws en de social media.<br />
-        De woorden staan op volgorde van ontdekking. <i>Laatst bijgewerkt op: 01-04-2020 00:25.</i>
+        <strong>Coronawoord.nl</strong> <i>is bijgewerkt op: 01-04-2020 00:55.</i>
       </p>
     </div>
   </footer>
