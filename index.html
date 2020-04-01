@@ -20,11 +20,12 @@
     }
     
     ol {
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
         padding-left: 1em;
         padding-right: 1em;
+        justify-content: flex-start;
+        margin: auto;
         margin-bottom: 2em;
         list-style-type:none;
         counter-reset:item 107; /* <---------------- STARTING NUMBER OF LIST (+1!) ----------------------- */
@@ -47,14 +48,14 @@
         width: 24%;
         box-shadow:0px 0px 0px 5px lightgrey inset;
         padding: 1em;
-        margin: 0.2em auto;
+        margin: 0.2em;
     }
     li:hover {
         box-shadow:0px 0px 0px 5px #ff3366 inset;
         
     }
     .top-notification {
-      width: 95%;
+      width: 90%;
       margin: auto;
     }
     @media screen and (max-width: 1407px) {
