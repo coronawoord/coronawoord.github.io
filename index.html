@@ -34,7 +34,7 @@
         margin: auto;
         margin-bottom: 2em;
         list-style-type:none;
-        counter-reset:item 118; /* <---------------- STARTING NUMBER OF LIST (+1!) ----------------------- */
+        counter-reset:item 120; /* <---------------- STARTING NUMBER OF LIST (+1!) ----------------------- */
     }
 
     ol > li {
@@ -82,13 +82,23 @@
             width: 100%;
         }
     }
+    /* @media screen and (prefers-color-scheme: dark) {
+      body {
+        background-color: #666666;
+        color: #ddd;
+      }
+      dark-message {
+        background-color: black;
+        color: white;
+      }
+    } */
     </style>
 </head>
 <body>
     <div class="container">
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="https:/coronawoord.nl">
+        <a class="navbar-item" href="/">
             <span class="header-font is-size-2 is-size-3-mobile spellcheck-effect">Coronawoord</span>&nbsp;&nbsp;&nbsp;<img src="favicon.png" />
         </a>
     </div>
@@ -98,12 +108,14 @@
     <div class="columns">
         <!-- <div class="column"></div> -->
         <div class="column">
-          <article class="message top-notification is-dark">
+          <article class="message top-notification is-dark dark-message">
             <div class="message-body">
               In de nieuwslawine die het Coronavirus met zich meebrengt worden er een hoop corona-samenstellingen gemaakt. Dit lijstje poogt ze te verzamelen. De lijst is op volgorde van ontdekken in het nieuws of op social media, nieuwste eerst.
             </div>
           </article>
             <ol class="words">
+              <li><span>Corona</span>moord</li>
+              <li><span>Corona</span>duiding</li>
               <li><span>Corona</span>bonds</li>
               <li><span>Corona</span>schuld</li>
               <li><span>Corona</span>verhaal</li>
@@ -230,7 +242,7 @@
 <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        <strong>Coronawoord.nl</strong> <i>is bijgewerkt op: 02-04-2020 10:03.</i>
+        <strong>Coronawoord.nl</strong> <i>is bijgewerkt op: 02-04-2020 16:45.</i>
       </p>
     </div>
   </footer>
