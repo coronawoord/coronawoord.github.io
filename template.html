@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Coronawoord</title>
+    <meta name="description" content="een verzameling van woorden die beginnen met 'corona' uit het nieuws en de social media">
+    <meta property="og:title" content="Coronawoord.nl" />
+    <meta property="og:description" content="een verzameling van woorden die beginnen met 'corona' uit het nieuws en de social media">
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="nl_NL" />
+    <meta property="og:image" content="favicon.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="160" />
+    <meta property="og:image:height" content="160" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Merriweather:400i|Pacifico|Noto+Serif:700i" rel="stylesheet">
+    <style>
+    .header-font {
+      font-family: 'Pacifico', cursive;
+      text-shadow: 0 1px 1px rgba(0,0,0,.35);
+    }
+    
+    ol {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 1em;
+        padding-right: 1em;
+        justify-content: flex-start;
+        margin: auto;
+        margin-bottom: 2em;
+        list-style-type:none;
+        counter-reset:item {num_items}; /* <---------------- STARTING NUMBER OF LIST (+1!) ----------------------- */
+    }
+
+    ol > li {
+        font-family: 'Noto Serif', serif;
+        font-weight: 500;
+        font-size: 1em;
+        font-weight: 500;
+        font-style: italic;
+        list-style-position: inside;
+        counter-increment:item -1;
+    }
+    ol > li:before
+    {
+        content:counter(item) ". ";
+    }
+    li {
+        width: 24%;
+        box-shadow:0px 0px 0px 5px lightgrey inset;
+        padding: 1em;
+        margin: 0.2em;
+    }
+
+    li:hover {
+        box-shadow:0px 0px 0px 5px #ff3366 inset;
+        
+    }
+    li > span {
+      color: #d0d0d0;
+    }
+    .top-notification {
+      width: 90%;
+      margin: auto;
+    }
+    @media screen and (max-width: 1407px) {
+        li {
+            width: 32% ;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        li {
+            width: 48% ;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        li {
+            width: 100%;
+        }
+    }
+    /* @media screen and (prefers-color-scheme: dark) {
+      body {
+        background-color: #666666;
+        color: #ddd;
+      }
+      dark-message {
+        background-color: black;
+        color: white;
+      }
+    } */
+    </style>
+</head>
+<body>
+    <div class="container">
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <span class="header-font is-size-2 is-size-3-mobile spellcheck-effect">Coronawoord</span>&nbsp;&nbsp;&nbsp;<img src="favicon.png" />
+        </a>
+    </div>
+</nav>
+
+
+    <div class="columns">
+        <div class="column">
+          <article class="message top-notification is-dark dark-message">
+            <div class="message-body">
+              In de nieuwslawine die het Coronavirus met zich meebrengt worden er een hoop corona-samenstellingen gemaakt. Dit lijstje poogt ze te verzamelen. De lijst is op volgorde van waarneming in het nieuws of op social media, nieuwste bovenaan.
+            </div>
+          </article>
+            <ol class="words">
+{content}
+            </ol>
+        </div>
+    </div>
+</div>
+</section>
+<footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Coronawoord.nl</strong> <i>is bijgewerkt op: {updated_at}.</i>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
