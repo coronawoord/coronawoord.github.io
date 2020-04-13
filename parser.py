@@ -11,7 +11,7 @@ lines.reverse()
 def format_word(line):
 
     if "corona" not in line.lower() or line.strip() == "":
-        return ""
+        return None
 
     parts = line.lower().split('corona')
     
@@ -24,11 +24,15 @@ def format_word(line):
     
     return "<li><span>Corona{dash}</span>{suffix}</li>".format(dash=dash, suffix=suffix)
 
-num_items = len(lines)
-content = '\n'.join([format_word(line) for line in lines])
+parsed = [format_word(line) for line in lines]
+parsed = list(filter(None, parsed)) # remove None lines
+
+content = '\n'.join(parsed)
+num_css_items = len(parsed)+1
+
 today = datetime.today().strftime("%d-%m-%Y")
 
 with open('index.html','w') as fh3:
-    formatted = template.replace('{updated_at}',today).replace('{num_items}', str(num_items+1)).replace('{content}', content)
+    formatted = template.replace('{updated_at}',today).replace('{num_css_items}', str(num_css_items)).replace('{content}', content)
     fh3.write(formatted)
-    print('Wrote {} items.'.format(num_items))
+    print('Wrote {} items.'.format(len(parsed)))
