@@ -326,3 +326,7 @@
 326. Coronavoucher
 327. Coronascheidsrechter
 328. Coronafraudeurs
+329. Coronaslot
+330. Coronatestafsprakennummer
+331. Corona-uitschieter
+332. Coronanummer
