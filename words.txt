@@ -385,7 +385,7 @@
 385. Coronalab
 386. Coronatestlijn
 387. Coronabeschermingsmiddel
-388. Coronaherstelfond
+388. Coronaherstelfonds
 389. Corona-liveblog
 390. Coronaherdenkingsdag
 391. Coronavraagstuk
@@ -496,3 +496,15 @@
 496. Coronawappie
 497. Coronabesluit
 498. Coronaprik
+499. Coronasigaar
+500. Coronamiljoen
+501. Coronastrijd
+502. Coronastresstest
+503. Coronakwakkelen
+504. Coronadepressie
+505. Coronaduisternis
+506. Coronamutatie
+507. Coronamutant
+508. Coronablokkade
+509. Coronaspecial
+510. Coronamoment
